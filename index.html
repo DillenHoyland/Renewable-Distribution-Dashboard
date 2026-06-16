@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Industry Charts</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="filterPanel">
+        <h3>Categories</h3>
+        <div id="filterControls"></div>
+
+        <label for="yearInput">Year:</label>
+        <input
+          type="number"
+          id="yearInput"
+          min="1990"
+          max="2023"
+          value="1990"
+        />
+
+        <div id="totalsDisplayBar1" style="margin-top: 20px">
+          <h4>Chart A</h4>
+          <div id="totalsValuesBar1">Total: —</div>
+        </div>
+
+        <div id="totalsDisplayDonut" style="margin-top: 20px">
+          <h4>Charts B + C + D</h4>
+          <div id="totalsValuesDonut">
+            Renewable Total: —<br />
+            Renewable Share (%): —<br /><br />
+            <strong>System Context</strong><br />
+            Total Primary Energy Consumption: —<br />
+            % from Renewables & Waste: —
+          </div>
+        </div>
+      </div>
+
+      <div class="charts">
+        <div class="GroupedBarChart-bar"></div>
+        <div class="bottom-chart">
+          <div class="lineChart"></div>
+          <div class="donutContainer"></div>
+        </div>
+        <div class="treemap"></div>
+      </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+#filterPanel {
+  width: 120px;
+  min-width: 120px;
+  padding: 15px;
+  border-right: 1px solid #ccc;
+  background: #f9f9f9;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.charts {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  min-height: 0;
+  min-width: 0;
+}
+
+.GroupedBarChart-bar {
+  grid-column: 1;
+  grid-row: 1;
+  border: 1px solid #ddd;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.treemap {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  border: 1px solid #ddd;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.bottom-chart {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.lineChart {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.donutContainer {
+  flex: 0 0 240px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+#filterControls {
+  margin-bottom: 10px;
+}
+
+#filterControls div {
+  margin-bottom: 5px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+#totalsValuesBar1 {
+  font-size: 13px;
+}
+
+#totalsValuesDonut {
+  font-size: 13px;
+}
