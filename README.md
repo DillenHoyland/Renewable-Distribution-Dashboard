@@ -12,4 +12,4 @@ An interactive data visualisation dashboard built with D3.js, displaying UK rene
 - HTML / CSS / JavaScript
 
 ## Live Demo
-https://dillenhoyland.github.io/Renewable-Distribution-Dashboard/ 
+https://dillenhoyland.github.io/Renewable-Distribution-Dashboard/ (desktop recommended)
